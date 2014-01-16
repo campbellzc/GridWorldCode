@@ -33,7 +33,7 @@ public class DancingBugRunner
         //CircleBug alice = new CircleBug(6);
         //alice.setColor(Color.ORANGE);
         Random r = new Random();
-        int[] array = new int[1000];
+        int[] array = new int[500];
         for (int i = 0; i < array.length; i++) {
             array[i] = r.nextInt(5);
         }
