@@ -11,6 +11,7 @@ public class Jumper extends Bug {
 	public Jumper() {
 		steps = 0;
 	}
+	// The new and improved move method moves the bug 2 spaces instead of 1.
 	public void move() {
 		Grid<Actor> gr = getGrid();
 		if (gr == null) {
@@ -25,8 +26,8 @@ public class Jumper extends Bug {
 		} else {
 			removeSelfFromGrid();
 		}
-
 	}
+	// The canMove2 method checks to see if the location 2 spaces in front of the bug is occupied.
 	public boolean canMove2() {
 		Grid<Actor> gr = getGrid(); 
 		if (gr == null) {
@@ -45,6 +46,7 @@ public class Jumper extends Bug {
 		Actor neighbor = gr.get(next2); 
 		return (neighbor == null) || (neighbor instanceof Flower); 
 	}
+	// We rewrote the act method to move the bug according to the new parameters
 	public void act() {
 		if (canMove2()) {
 			steps += 2;
