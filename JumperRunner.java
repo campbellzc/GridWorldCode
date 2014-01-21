@@ -1,5 +1,7 @@
 import info.gridworld.actor.ActorWorld;
 import info.gridworld.grid.Location;
+import info.gridworld.actor.Flower;
+import info.gridworld.actor.Rock;
 import java.util.Random;
 import java.awt.Color;
 
